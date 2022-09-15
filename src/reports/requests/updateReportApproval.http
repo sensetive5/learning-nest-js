@@ -1,0 +1,7 @@
+### Update Report Approval
+PATCH http://localhost:3000/reports/1
+Content-Type: application/json
+
+{
+    "approved": true
+}

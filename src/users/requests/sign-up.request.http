@@ -1,0 +1,8 @@
+### Sign in as an existing user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "ownger@yandex.ru",
+    "password": "123"
+}

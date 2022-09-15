@@ -1,0 +1,2 @@
+# Remove user by id
+DELETE http://localhost:3000/auth/1

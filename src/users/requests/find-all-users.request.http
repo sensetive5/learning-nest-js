@@ -1,0 +1,2 @@
+# Find all users
+GET http://localhost:3000/auth?email=test@test.ru

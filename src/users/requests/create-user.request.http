@@ -1,0 +1,57 @@
+### Create a new user (Success)
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "ownger@yandex.ru",
+    "password": "123"
+}
+
+### Login
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+   "email": "ow@yandex.ru",
+    "password": "foo"
+}
+### SignOut
+POST http://localhost:3000/auth/signout
+Content-Type: application/json
+
+### Who Am I
+GET http://localhost:3000/auth/whoami
+ 
+### Create a new user (Error. Empty Email)
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "",
+    "password": "PuM0Iw[MP{*ue/EL"
+}
+
+### Create a new user (Error. Wrong Email)
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "foo.bar",
+    "password": "PuM0Iw[MP{*ue/EL"
+}
+
+### Create a new user (Error. Empty password)
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "test@test.ru",
+    "password": ""
+}
+
+### Set a color
+GET http://localhost:3000/auth/colors/gop
+
+### Get a color
+GET http://localhost:3000/auth/colors
+Content-Type: application/json

@@ -1,0 +1,13 @@
+### Success create report 
+POST http://localhost:3000/reports/report
+Content-Type: application/json
+
+{
+    "price": 7500,
+    "vendor": "Ford",
+    "model": "Mustang",
+    "year": 1982,
+    "mileage": 50000,
+    "lng": 45,
+    "lat": 45
+}

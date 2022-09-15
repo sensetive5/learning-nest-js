@@ -1,0 +1,2 @@
+### Get an estimate for an existing vehicle
+GET http://localhost:3000/reports?vendor=Ford&year=1981&model=Mustang&mileage=50000&lat=45&lng=45
